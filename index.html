@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <button id="top-btn"><a class="no-anchor-style" href="#navbar">Top</a></button>
+
+    <nav id="navbar">
+        <input type="checkbox" id="nav-check">
+        <p id="nav-title"><a href="#home-section">Karan<span id="nav-title-highlight"> Thakkar</a></span></p>
+        <menu id="menu-items">
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="assets/KaranThakkar_Resume.pdf" download="KaranThakkar_Resume"
+                    class="no-anchor-style">Resume</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </menu>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </nav>
+
+    <section id="home-section">
+        <div id="intro">
+            <span>Hello, I'm</span>
+            <h1>Karan Thakkar</h1>
+            <h2>Full Stack Developer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore delectus voluptas cumque, dolorum.</p>
+            <button class="resume-btn"><a href="assets/KaranThakkar_Resume.pdf" download="KaranThakkar_Resume"
+                    class="no-anchor-style">Download
+                    Resume</a></button>
+        </div>
+        <div id="home-img">
+            <img src="images/profileImg.jpeg" alt="personal picture">
+        </div>
+    </section>
+
+    <section id="about-section">
+        <div id="about-video">
+            <iframe width="450px" height="300px" title="Personal Introduction Video" frameborder="0" scrolling="auto"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen src="assets/PositioningStatement.mp4" frameborder="0"></iframe>
+        </div>
+        <div id="about-intro">
+            <span id="about-me-txt">About me</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore delectus voluptas cumque, dolorum.</p>
+            <p><a href="tel:+18578696060">+1 (857) 869-6060</a></p>
+            <p><a href="mailto:thakkar.kara@northeastern.edu">thakkar.kara@northeastern.edu</a>
+            </p>
+            <button class="resume-btn"><a href="assets/KaranThakkar_Resume.pdf" download="KaranThakkar_Resume"
+                    class="no-anchor-style">Download
+                    Resume</a></button>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <figure>
+            <img src="images/certificate1.JPG" alt="Elephant at sunset" />
+            <figcaption class="certificate-figcaption">AWS Security Risk</figcaption>
+        </figure>
+        <figure>
+            <img src="images/certificate2.JPG" alt="Elephant at sunset" />
+            <figcaption class="certificate-figcaption">Going Cloud Native</figcaption>
+        </figure>
+        <figure>
+            <img src="images/certificate3.JPG" alt="Elephant at sunset" />
+            <figcaption class="certificate-figcaption">Dell EMC</figcaption>
+        </figure>
+        <figure>
+            <img src="images/certificate4.JPG" alt="Elephant at sunset" />
+            <figcaption class="certificate-figcaption">Web Developer Bootcamp</figcaption>
+        </figure>
+        <figure>
+            <img src="images/certificate5.JPG" alt="Elephant at sunset" />
+            <figcaption class="certificate-figcaption">Git for Developers</figcaption>
+        </figure>
+        <figure>
+            <img src="images/certificate1.JPG" alt="Elephant at sunset" />
+            <figcaption class="certificate-figcaption">AWS Security</figcaption>
+        </figure>
+        <figure>
+            <img src="images/certificate2.JPG" alt="Elephant at sunset" />
+            <figcaption class="certificate-figcaption">AWS Fundamentals</figcaption>
+        </figure>
+    </section>
+
+    <section id="contact-section">
+        <h1>Contact</h1>
+        <div id="contact-form">
+            <form>
+                <input type="name" id="name" name="name" required placeholder="Your Name" />
+                <input type="email" id="email" name="email" required placeholder="Your Email" />
+                <textarea id="message" name="message" rows="4" cols="50" required
+                    placeholder="Write Message Here"></textarea>
+                <input class="contact-btn" type="button" value="SEND">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; Karan Thakkar | All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>

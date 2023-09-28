@@ -1,0 +1,48 @@
+/* Default styles given during assignment */
+#myTable input {
+  margin-left: 5px;
+}
+
+#myTable {
+  border: 2px solid green;
+  border-collapse: collapse;
+  margin: 30px 30px 20px 40px;
+}
+#myTable td,
+th {
+  border: 1px solid green;
+  padding: 5px;
+}
+#myTable th {
+  color: #fff;
+  background-color: #a7c942;
+}
+#button {
+  color: #fff;
+  background-color: orange;
+  border-radius: 3px;
+  border: 2px solid orange;
+  margin-left: 180px;
+}
+
+/* Updated Assignment Styles */
+.dropDownTextArea {
+  display: none;
+}
+
+#button:disabled {
+  color: #666666;
+  cursor: not-allowed;
+  border: 1px solid #9f9e9e;
+  border-radius: 3px;
+  background-color: #cecece;
+  margin-left: 180px;
+}
+
+#add {
+  cursor: pointer;
+}
+
+.delete-btn {
+  cursor: pointer;
+}

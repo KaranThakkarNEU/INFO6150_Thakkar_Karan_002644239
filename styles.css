@@ -1,0 +1,72 @@
+label {
+  float: left;
+  width: 150px;
+}
+
+#container {
+  width: 700px;
+  margin: auto;
+  background-color: beige;
+}
+
+main {
+  padding: 50px;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border: 2px solid #007bff; /* Change the border color to blue when focused */
+  outline: none; /* Remove the default focus outline */
+}
+
+.error {
+  position: relative;
+  left: 150px;
+  color: #f91919;
+}
+
+.success {
+  position: relative;
+  left: 150px;
+  color: #09c372;
+}
+
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+thead tr th {
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+#data-table {
+  display: none;
+}
+
+#checkboxContainer {
+  position: relative;
+  left: 150px;
+}
+
+.review-hidden {
+  display: none;
+}

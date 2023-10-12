@@ -1,0 +1,52 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin login-inputs {
+  height: 1.9rem;
+  width: 13.5rem;
+  padding: 0.5rem;
+  border: 2px solid $primary-color;
+  border-radius: 0.3rem;
+}
+
+@mixin no-anchor-style {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin no-ul-style {
+  list-style-type: none;
+}
+
+%cursor-pointer {
+  cursor: pointer;
+}
+
+@mixin button {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(227, 142, 106);
+  outline: none;
+  border: none;
+  height: 3rem;
+  width: 11rem;
+  font-size: 15px;
+  border-radius: 0.5rem;
+  @extend %cursor-pointer;
+}
+
+@mixin background-image($image) {
+  background-image: url($image);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@for $i from 1 through 1 {
+  .list-space {
+    margin-bottom: 25px;
+  }
+}

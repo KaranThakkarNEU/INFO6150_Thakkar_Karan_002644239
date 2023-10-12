@@ -1,0 +1,48 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+@import "../utilities/functions";
+
+#login-html {
+  height: 100vh;
+  width: 100vw;
+  background: url(../assets/images/login_page_banner.jpg) no-repeat center
+    center fixed;
+  background-size: cover;
+}
+
+.login-body {
+  @include flex-center;
+  min-height: 100vh;
+}
+
+.login-page {
+  @include flex-center;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #d3b8b8;
+  background: #ffb67487;
+  border-radius: 1rem;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.login-input {
+  outline: none;
+  @include login-inputs;
+}
+
+.submit-btn {
+  // height: 2rem;
+  // width: 7.5rem;
+  // border-radius: 0.3rem;
+  // outline: none;
+  // border: 2px solid $primary-color;
+  // font-size: 1rem;
+  @extend %cursor-pointer;
+  @include button;
+}
+
+.login-link {
+  @include no-anchor-style;
+}

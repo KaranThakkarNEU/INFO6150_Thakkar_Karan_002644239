@@ -1,0 +1,12 @@
+@import "components/login";
+@import "components/index";
+@import "utilities/mixins";
+@import "utilities/variables";
+@import "utilities/mediaqueries";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}

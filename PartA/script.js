@@ -47,7 +47,7 @@ $(document).ready(function () {
       // If all fields are valid, then submit the form
       // const username = $("#username").val();
       form[0].reset();
-      window.location.href = `index.html?${username}`;
+      window.location.href = `index.html?username=${username}`;
 
       return false;
     }

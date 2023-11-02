@@ -18,3 +18,31 @@ form {
 .error {
   color: red;
 }
+
+.title {
+  text-align: center;
+}
+
+.calc-container * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputs-row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spacing {
+  margin-right: 10px;
+}
+
+.operations-btns {
+  flex-direction: row;
+  gap: 10px;
+}

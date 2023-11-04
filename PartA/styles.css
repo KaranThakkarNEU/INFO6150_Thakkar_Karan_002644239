@@ -1,3 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+}
+
+label {
+  font-size: 24px;
+  display: block;
+  margin: 20px 0;
+}
+
+input {
+  height: 25px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
 #calculator {
   height: 100vh;
   width: 100vw;
@@ -45,4 +74,12 @@ form {
 .operations-btns {
   flex-direction: row;
   gap: 10px;
+}
+
+.input-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
 }

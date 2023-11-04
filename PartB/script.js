@@ -9,15 +9,27 @@ $(document).ready(() => {
   $("#datePicker").val(new Date().toISOString().split("T")[0]);
 
   $("#startButton").on("click", async () => {
-    await startTimer();
+    try {
+      await startTimer();
+    } catch (error) {
+      console.log(error);
+    }
   });
 
   $("#stopButton").on("click", async () => {
-    await stopTimer();
+    try {
+      await stopTimer();
+    } catch (error) {
+      console.log(error);
+    }
   });
 
   $("#resetButton").on("click", async () => {
-    await resetTimer();
+    try {
+      await resetTimer();
+    } catch (error) {
+      console.log(error);
+    }
   });
 
   const formatTime = (time) => {

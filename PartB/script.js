@@ -76,14 +76,10 @@ $(document).ready(() => {
 
   const resetTimer = () => {
     return new Promise((reslove, reject) => {
-      if (timeIntervalId) {
-        timeIntervalId = clearInterval(timeIntervalId);
-        startTime = 0;
-        $("#timeLabel").html("00:00:00");
-        reslove("Timer reset.");
-      } else {
-        reject("Timer is not running.");
-      }
+      timeIntervalId = clearInterval(timeIntervalId);
+      startTime = 0;
+      $("#timeLabel").html("00:00:00");
+      reslove("Timer reset.");
     });
   };
 });

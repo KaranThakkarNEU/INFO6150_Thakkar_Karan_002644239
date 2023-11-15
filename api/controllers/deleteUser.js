@@ -1,13 +1,10 @@
-const express = require("express");
-const userModel = require("../model");
-const router = express.Router();
+const deleteUserByEmailService = require("../services/deleteUser");
 
-router.delete("/", async (request, response) => {
+const deleteUser = async (request, response) => {
   const { email } = request.body;
 
   try {
-    // Find the user by ID and remove them
-    const user = await userModel.findOneAndDelete({ email });
+    const user = await deleteUserByEmailService(email);
 
     if (!user) {
       return response.status(404).json({ message: "User not found" });
@@ -18,6 +15,6 @@ router.delete("/", async (request, response) => {
     console.log(error);
     return response.status(500).json(error);
   }
-});
+};
 
-module.exports = router;
+module.exports = deleteUser;

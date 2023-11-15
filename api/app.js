@@ -5,9 +5,12 @@ const createUserRoute = require("./routes/createUser");
 const deleteUserRoute = require("./routes/deleteUser");
 const getUsersRoute = require("./routes/getUsers");
 const updateUserRoute = require("./routes/updateUser");
+const verifyUserRoute = require("./routes/verifyUser");
+const cors = require("cors");
 
 const app = express();
 
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(
@@ -19,6 +22,7 @@ app.use(
 app.use("/user/getAll", getUsersRoute);
 app.use("/user/create", createUserRoute);
 app.use("/user/edit", updateUserRoute);
+app.use("/user/verify", verifyUserRoute);
 app.use("/user/delete", deleteUserRoute);
 
 (async () => {
